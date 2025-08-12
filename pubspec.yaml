@@ -1,0 +1,30 @@
+name: classico_new
+description: "A new Flutter project."
+publish_to: "none"
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.6.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  http: ^0.13.6
+  intl: ^0.18.0
+  image_picker: ^0.8.7+4
+  shared_preferences: ^2.0.15
+  email_validator: ^2.1.17
+  cupertino_icons: ^1.0.8
+
+  fluttertoast: ^8.2.12 # For Toast messages
+  fl_chart: ^0.66.0 # For charts including BarChartGroupData
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true

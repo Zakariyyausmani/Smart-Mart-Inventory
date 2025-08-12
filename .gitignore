@@ -1,0 +1,39 @@
+# Flutter related files
+/build/
+/.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.dart_tool/
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# iOS Build files
+ios/Flutter/Flutter.framework
+ios/Flutter/Flutter.podspec
+ios/Flutter/engine
+ios/Flutter/App.framework
+
+# Android build files
+/android/.gradle
+/android/app/build/
+/android/gradle/
+/android/local.properties
+
+# Dart tools
+.dart_tool/
+
+# VSCode folder
+.vscode/
+
+# Node.js backend files
+/node_modules/
+/.env
+.DS_Store
+
+# Mac OS
+.DS_Store
+
+# Logs
+*.log
