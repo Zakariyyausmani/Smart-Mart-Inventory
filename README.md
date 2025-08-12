@@ -1,7 +1,3 @@
-Certainly! Below is a **complete README.md file content** for your Smart Mart project, including all recommended sections and details. You can directly copy this content into a new file named `README.md` in your project root.
-
----
-
 # Smart Mart (Inventory Management System)
 
 Manage your products, track stocks, and easily monitor sales with an efficient inventory management system designed specifically for Smart Mart.  
@@ -68,7 +64,6 @@ The Flutter app provides a user-friendly interface for admin and cashier roles, 
 1. Clone the backend repository or use the backend directory inside this project.
 2. Create a `.env` file in the backend root and configure environment variables such as:
 
-```env
 MONGODB_URI=your_mongodb_connection_string
 JWT_SECRET=your_jwt_secret_key
 SMTP_HOST=smtp.your-email.com
@@ -76,25 +71,26 @@ SMTP_PORT=587
 SMTP_USER=your_email_user
 SMTP_PASS=your_email_password
 PORT=8080
-```
+
+text
 
 3. Install backend dependencies:
 
-```bash
 npm install
-```
+
+text
 
 4. Start backend server locally (development mode):
 
-```bash
 npm run dev
-```
+
+text
 
 Or start for production:
 
-```bash
 npm start
-```
+
+text
 
 ---
 
@@ -103,36 +99,36 @@ npm start
 1. Ensure Flutter SDK is installed and configured.
 2. Navigate to your Flutter project root folder and run:
 
-```bash
 flutter pub get
-```
+
+text
 
 3. Update the backend URL in `lib/api_config.dart`. For example:
 
-```dart
 String getBackendBaseUrl() {
-  // Use your local backend URL for device testing
-  const localUrl = "http://192.168.100.181:8080";
+// Use your local backend URL for device testing
+const localUrl = "http://192.168.100.181:8080";
 
-  // Use your deployed URL for production
-  const deployedUrl = "https://inventory-pos-backen6d.vercel.app";
+// Use your deployed URL for production
+const deployedUrl = "https://inventory-pos-backen6d.vercel.app";
 
-  // Return the URL based on your build mode or environment
-  return deployedUrl; // change to localUrl if testing locally
+// Return the URL based on your build mode or environment
+return deployedUrl; // change to localUrl if testing locally
 }
-```
+
+text
 
 4. Run Flutter app on device or emulator:
 
-```bash
 flutter run
-```
+
+text
 
 5. To build a release APK:
 
-```bash
 flutter build apk --release
-```
+
+text
 
 ---
 
@@ -163,35 +159,35 @@ flutter build apk --release
 - All API endpoints are prefixed with `/api/`.
 - Login API:
 
-```
 POST /api/login
 Content-Type: application/json
 
 {
-  "email": "user@example.com",
-  "password": "yourpassword",
-  "role": "admin"
+"email": "user@example.com",
+"password": "yourpassword",
+"role": "admin"
 }
-```
+
+text
 
 - On success, backend returns:
 
-```json
 {
-  "token": "JWT_TOKEN_HERE",
-  "userId": "USER_ID",
-  "name": "User Name",
-  "role": "admin",
-  "email": "user@example.com"
+"token": "JWT_TOKEN_HERE",
+"userId": "USER_ID",
+"name": "User Name",
+"role": "admin",
+"email": "user@example.com"
 }
-```
+
+text
 
 - Client stores the token and user info securely (e.g., SharedPreferences).
 - Include the JWT token in Authorization header for protected routes:
 
-```
 Authorization: Bearer JWT_TOKEN_HERE
-```
+
+text
 
 ---
 
@@ -202,21 +198,21 @@ Contributions are very welcome! To contribute:
 1. Fork the repository.
 2. Create your feature branch:
 
-```bash
 git checkout -b feature/my-feature
-```
+
+text
 
 3. Commit your changes:
 
-```bash
 git commit -am 'Add feature description'
-```
+
+text
 
 4. Push to your branch:
 
-```bash
 git push origin feature/my-feature
-```
+
+text
 
 5. Open a pull request on GitHub.
 
@@ -235,3 +231,6 @@ This project is licensed under the MIT License. See the LICENSE file for details
 ---
 
 If you need any assistance or find issues, please open an issue or contact the maintainer.
+git add README.md
+git commit -m "Resolve merge conflict and update README"
+git push origin main
